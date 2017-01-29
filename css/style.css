@@ -1,5 +1,5 @@
 #container {
-  background-image: url('img/background.jpg');
+  background-image: url('../img/background.jpg');
   width: 1050px;
   height: 1372px;
   margin: 0 auto;
@@ -22,7 +22,8 @@ header {
   vertical-align: middle;
 }
 
-section div {
+div#right, div#left {
+  text-align: center;
   float: left;
   width: 50%;
   height: 300px;
@@ -34,4 +35,22 @@ section div {
   clear:both;
 }
 
+form {
+  background: #FFF;
+  text-align: left;
+  padding-left: 100px;
+}
 
+.form-title {
+  font-family: sans-serif;
+  font-size: 1.9em;
+  color: white;
+  text-shadow: 1px 0px 1px #000;
+}
+
+
+
+label span {
+  display: inline-flex;
+  width: 50px;
+}

@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -18,8 +19,91 @@
 
     <section class="clearfix">
 
-      <div class="left">tekst</div>
-      <div class="right">tekst 2</div>
+      <div id="left">
+        <span class="form-title">Register Form</span>
+        <form>
+          <div class="form-filed">
+            <label for="username"><i class="fa fa-user" aria-hidden="true"></i></label>
+            <input type="text" name="username" id="username" placeholder="Username">
+          </div>
+
+          <div class="form-filed">
+            <label for="password"><i class="fa fa-lock" aria-hidden="true"></i></label>
+            <input type="password" name="password" id="password" placeholder="Password">
+          </div>
+
+          <div class="form-filed">
+            <label for="conf-password"><i class="fa fa-lock" aria-hidden="true"></i></label>
+            <input type="text" name="conf-password" id="conf-password" placeholder="Confirm Password">
+          </div>
+
+          <div class="form-filed">
+            <label for="email"><i class="fa fa-envelope" aria-hidden="true"></i></label>
+            <input type="email" name="email" id="email" placeholder="Email">
+          </div>
+
+          <div class="form-filed">
+            <label for="location"><i class="fa fa-map-marker" aria-hidden="true"></i></label>
+            <select name="" id="">
+              <option value="" selected>Your Location</option>
+              <option value="Krakow">Kraków</option>
+              <option value="Warszawa">Warszawa</option>
+              <option value="Gdansk">Gdańsk</option>
+              <option value="Rzeszow">Rzeszów</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <input type="checkbox">I have read and accept the term of use.
+          </div>
+          <button>Sing up</button>
+
+        </form>
+
+        <span>Send Email</span>
+        <form>
+          <label for=""></label>
+          <input type="text" placeholder="username">
+
+          <label for=""></label>
+          <input type="email" placeholder="Email">
+
+          <textarea placeholder="Type Your message." id="" cols="30" rows="10"></textarea>
+          <input type="checkbox">Send a copy to my email.
+          <button>Send Email</button>
+        </form>
+      </div>
+
+      <div id="right">
+        <span>Sign in form</span>
+        <form action="">
+          <label for=""></label>
+          <input type="text" placeholder="Username">
+          <label for=""></label>
+          <input type="password" placeholder="Password">
+          <input type="checkbox">Remember Me.
+          <button>Sign in</button>
+        </form>
+
+        <span>Recover Form</span>
+        <form action="">
+          <label for=""></label>
+          <input type="email" placeholder="Enter your Email">
+
+          <label for=""></label>
+          <input type="tel" placeholder="Enter telephone number">
+
+          <button>Send</button>
+          <button>Done</button>
+        </form>
+
+        <span>Subscribe Form</span>
+        <form action="">
+          <label for=""></label>
+          <input type="password" placeholder="Password">
+          <button>Subscribe</button>
+          <button>No, Thanks</button>
+        </form>
+      </div>
 
     </section>
 
