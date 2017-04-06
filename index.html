@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -22,28 +22,28 @@
       <div id="left">
         <span class="form-title">Register Form</span>
         <form>
-          <div class="form-filed">
-            <label for="username"><i class="fa fa-user" aria-hidden="true"></i></label>
-            <input type="text" name="username" id="username" placeholder="Username">
+          <div class="form-field">
+            <label for="username"><i></i></label>
+            <input class="input-element" type="text" name="username" id="username" placeholder="Username">
           </div>
 
-          <div class="form-filed">
-            <label for="password"><i class="fa fa-lock" aria-hidden="true"></i></label>
-            <input type="password" name="password" id="password" placeholder="Password">
+          <div class="form-field">
+            <label for="password"><i></i></label>
+            <input class="input-element" type="password" name="password" id="password" placeholder="Password">
           </div>
 
-          <div class="form-filed">
-            <label for="conf-password"><i class="fa fa-lock" aria-hidden="true"></i></label>
-            <input type="text" name="conf-password" id="conf-password" placeholder="Confirm Password">
+          <div class="form-field">
+            <label for="conf-password"><i></i></label>
+            <input class="input-element" type="text" name="conf-password" id="conf-password" placeholder="Confirm Password">
           </div>
 
-          <div class="form-filed">
-            <label for="email"><i class="fa fa-envelope" aria-hidden="true"></i></label>
-            <input type="email" name="email" id="email" placeholder="Email">
+          <div class="form-field">
+            <label for="email"><i></i></label>
+            <input class="input-element" type="email" name="email" id="email" placeholder="Email">
           </div>
 
-          <div class="form-filed">
-            <label for="location"><i class="fa fa-map-marker" aria-hidden="true"></i></label>
+          <div class="form-field">
+            <label for="location"><i></i></label>
             <select name="" id="">
               <option value="" selected>Your Location</option>
               <option value="Krakow">Kraków</option>
@@ -52,54 +52,66 @@
               <option value="Rzeszow">Rzeszów</option>
             </select>
           </div>
-          <div class="form-field">
-            <input type="checkbox">I have read and accept the term of use.
-          </div>
+          <input class="input-element" type="checkbox">I have read and accept the term of use.
           <button>Sing up</button>
 
         </form>
 
-        <span>Send Email</span>
+        <span class="form-title">Send Email</span>
         <form>
+        <div class="form-field">
           <label for=""></label>
-          <input type="text" placeholder="username">
+          <input class="input-element" type="text" placeholder="username">
+        </div>
 
+        <div class="form-field">
           <label for=""></label>
-          <input type="email" placeholder="Email">
+          <input class="input-element" type="email" placeholder="Email">
+        </div>
 
           <textarea placeholder="Type Your message." id="" cols="30" rows="10"></textarea>
-          <input type="checkbox">Send a copy to my email.
+          <input class="input-element" type="checkbox">Send a copy to my email.
           <button>Send Email</button>
         </form>
       </div>
 
       <div id="right">
-        <span>Sign in form</span>
+        <span class="form-title">Sign in Form</span>
         <form action="">
-          <label for=""></label>
-          <input type="text" placeholder="Username">
-          <label for=""></label>
-          <input type="password" placeholder="Password">
-          <input type="checkbox">Remember Me.
+          <div class="form-field">
+            <label for=""></label>
+            <input class="input-element" type="text" placeholder="Username">
+          </div>
+           <div class="form-field">
+            <label for=""></label>
+            <input class="input-element" type="password" placeholder="Password">
+          </div>
+          <input class="input-element" type="checkbox">Remember Me.
           <button>Sign in</button>
         </form>
 
-        <span>Recover Form</span>
+        <span class="form-title">Recover Form</span>
         <form action="">
-          <label for=""></label>
-          <input type="email" placeholder="Enter your Email">
+          <div class="form-field">
+            <label for=""></label>
+            <input class="input-element" type="email" placeholder="Enter your Email">
+          </div>
 
-          <label for=""></label>
-          <input type="tel" placeholder="Enter telephone number">
+          <div class="form-field">
+            <label for=""></label>
+            <input class="input-element" type="tel" placeholder="Enter telephone number">
+          </div>
 
           <button>Send</button>
           <button>Done</button>
         </form>
 
-        <span>Subscribe Form</span>
+        <span class="form-title">Subscribe Form</span>
         <form action="">
-          <label for=""></label>
-          <input type="password" placeholder="Password">
+          <div class="form-field">
+            <label for=""></label>
+            <input class="input-element" type="password" placeholder="E-mail">
+          </div>
           <button>Subscribe</button>
           <button>No, Thanks</button>
         </form>
