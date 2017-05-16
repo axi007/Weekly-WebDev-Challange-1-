@@ -19,7 +19,6 @@ body {
   box-sizing: border-box;
   padding: 15px 0;
   opacity: .5;
-  position: static;
 }
 
 .page-header:hover {
@@ -47,6 +46,7 @@ body {
 
 .column {
   width: 420px;
+  height: 100%;
 }
 
 .forms-wrapper {
@@ -164,7 +164,7 @@ body {
 .btn-large {
   width: 100%;
   font-size: 17px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .btn-medium {
@@ -198,4 +198,50 @@ body {
   align-items: center;
   height: auto;
   margin: 0px;
+  display: flex;
+  color: #C3C3C3
 }
+
+.page-footer {
+  display: block;
+  width: 100%;
+  text-align: center;
+  opacity: .5;
+}
+
+.page-footer:hover {
+  opacity: 1;
+}
+
+.footer-logo-icon {
+  position: relative;
+
+}
+
+.footer-logo-text {
+  position: relative;
+  top: 20px;
+}
+
+.footer-logo-url{
+  padding-top: 25px;
+}
+
+input[type=checkbox] {
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  -webkit-appearance: none;
+  outline: 0;
+}
+input[type=checkbox]:checked {
+  background-image: url('../img/checkbox-check.png');
+}
+input[type=checkbox]:not(:checked) {
+  background-image: url('../img/checkbox-uncheck.png');
+}
+
+
