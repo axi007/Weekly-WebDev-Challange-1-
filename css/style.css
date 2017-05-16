@@ -1,42 +1,64 @@
 body {
   font-family: 'Titillium Web', sans-serif;
+  min-width: 300px;
 }
 
 #container {
-  background: url('../img/background.jpg') no-repeat no-repeat center;
-  width: 1050px;
-  height: 1372px;
+  /*background: url('../img/background.jpg') no-repeat center fixed;*/
+  background-image: url('../img/background.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.page-header {
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 15px 0;
+  opacity: .5;
+  position: static;
+}
+
+.page-header:hover {
+  opacity: 1;
+}
+
+.logo-icon {
+}
+
+.logo-text-icon {
+  position: relative;
+  top: -23px;
+  left: 13px;
+  background-clip: padding-box;
+}
+
+.column-wrapper {
   margin: 0 auto;
-}
-
-header {
- margin: 0 0 9px 0;
-}
-
-.top-icon {
-  margin: 42px 0px 0px 342px;
-}
-
-.top-logo-text {
-  margin: 55px 0px 0px 11px;
-}
-
-.top-icon, .top-logo-text {
-  display: inline-block;
-  vertical-align: middle;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .column {
-  width: 50%;
+  width: 420px;
+}
+
+.forms-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .form-container {
-  width: 420px;
-  margin: 20px 0 40px 0;
-  padding: 25px 20px;
+  width: 100%;
+  margin: 20px 0 20px 0;
+  padding: 25px 20px 20px;
   background-color: #f4f4f4;
   background-clip: padding-box;
   border: 20px solid rgba(0, 0, 0, .25);
@@ -47,24 +69,9 @@ header {
 .form-title {
   font-size: 2em;
   color: white;
-  text-shadow: 1px 0px 1px #000;
+  text-shadow: 2px 2px 1px #333;
   letter-spacing: 0.5px;
   margin: 0 auto;
-}
-
-section {
-  display: flex;
-  flex-direction: row;
-}
-
-.input-field {
-  background: #f4f4f4;
-  box-sizing: border-box;
-  font-size: 11px;
-  width: calc(100% - 60px);
-  border: none;
-  padding: 2px 0 0 22px;
-  height: inherit;
 }
 
 .form-field {
@@ -72,7 +79,27 @@ section {
   border-radius: 4px;
   border: #CCC 1px solid;
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+}
+
+.input-field {
+  background: #f4f4f4;
+  box-sizing: border-box;
+  font-size: 16px;
+  width: calc(100% - 60px);
+  border: none;
+  padding: 2px 0 0 22px;
+  height: inherit;
+}
+/**:placeholder-shown{background-color: aquamarine;}*/
+
+.input-field::placeholder {
+  color: #AFAFAF;
+}
+
+.input-select.input-field {
+  color: #AFAFAF;
+  padding-left: 18px;
 }
 
 .icon-label {
@@ -81,9 +108,10 @@ section {
   height: 39px;
   float: left;
   opacity: 0.2;
+  cursor: pointer;
 }
 
-.icon-label::after{
+.icon-label::after {
   content: "";
   display: block;
   margin: 6px 0 3px 0;
@@ -91,32 +119,33 @@ section {
   height: 30px;
 }
 
-.user-icon{
+.user-icon {
   background: url(../img/username.png) no-repeat center;
 }
 
-.password-icon{
+.password-icon {
   background: url(../img/password.png) no-repeat center;
 }
 
-.email-icon{
+.email-icon {
   background: url(../img/email.png) no-repeat center;
 }
 
-.location-icon{
+.location-icon {
   background: url(../img/location.png) no-repeat center;
 }
 
-.phone-icon{
+.phone-icon {
   background: url(../img/phone.png) no-repeat center;
 }
 
 .btn {
   padding: 13px;
-  border: 1px solid ;
+  border: 1px solid;
   border-radius: 4px;
   text-shadow: 1px 1px 1px #000;
   color: #FFF;
+  cursor: pointer;
 }
 
 .btn-success {
@@ -127,8 +156,9 @@ section {
   background: linear-gradient(#f65e6f, #f03848);
 }
 
-.btn[disabled]{
+.btn[disabled] {
   opacity: 0.5;
+  cursor: not-allowed;
 }
 
 .btn-large {
@@ -141,9 +171,26 @@ section {
   width: 147px;
 }
 
+@media (max-width: 420px) {
+  .btn-medium {
+    width: 100px;
+  }
+}
+
+.gap-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .input-textbox {
   border: 1px solid #CCC;
-  height: auto;
+  height: 200px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: transparent;
+  padding: 10px;
+  resize: none;
 }
 
 .form-checkbox {
@@ -151,13 +198,4 @@ section {
   align-items: center;
   height: auto;
   margin: 0px;
-}
-
-.to-right {
-}
-
-.gap-wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }

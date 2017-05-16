@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>Document</title>
   <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
@@ -12,135 +13,139 @@
 <body>
   <div id="container">
 
-    <header>
-      <img src="img/top-logo-icon.png" alt="company-icon" class="top-icon">
-      <img src="img/top-logo-text.png" alt="company-logo" class="top-logo-text">
+    <header class="page-header">
+        <img src="img/top-logo-icon.png" alt="company-icon" class="logo-icon">
+        <img src="img/top-logo-text.png" alt="company-logo" class="logo-text-icon">
     </header>
 
-    <section>
+    <main class="column-wrapper">
 
       <div class="column">
-        <span class="form-title">Register Form</span>
+        <div class="forms-wrapper">
+          <span class="form-title">Register Form</span>
 
-        <div class="form-container">
-          <form>
-            <div class="form-field">
-              <label class="icon-label user-icon" for="username"></label>
-              <input class="input-field" type="text" name="username" id="username" placeholder="Username">
-            </div>
-
-            <div class="form-field">
-              <label class="icon-label password-icon" for="password"></label>
-              <input class="input-field" type="password" name="password" id="password" placeholder="Password">
-            </div>
-
-            <div class="form-field">
-              <label class="icon-label password-icon" for="conf-password"></label>
-              <input class="input-field" type="text" name="conf-password" id="conf-password" placeholder="Confirm Password">
-            </div>
-
-            <div class="form-field">
-              <label class="icon-label email-icon" for="email"></label>
-              <input class="input-field" type="email" name="email" id="email" placeholder="Email">
-            </div>
-
-            <div class="form-field">
-              <label class="icon-label location-icon" for="location"></label>
-              <select class="input-field" id="location">
-                <option value="" selected>Your Location</option>
-                <option value="Krakow">Kraków</option>
-                <option value="Warszawa">Warszawa</option>
-                <option value="Gdansk">Gdańsk</option>
-                <option value="Rzeszow">Rzeszów</option>
-              </select>
-            </div>
-
-            <div class="form-field form-checkbox">
-              <input class="" type="checkbox">I have read and accept the term of use.
-            </div>
-            <button class="btn btn-success btn-large">Sing up</button>
-          </form>
-        </div>
-
-        <span class="form-title">Send Email</span>
-        <div class="form-container">
-          <form>
-            <div class="form-field">
-              <label class="icon-label user-icon" for="username2"></label>
-              <input class="input-field" id="username2" type="text" placeholder="Username">
-            </div>
-
-            <div class="form-field">
-              <label class="icon-label email-icon" for="email2"></label>
-              <input class="input-field" id="email2" type="email" placeholder="Email">
-            </div>
-
-            <textarea class="form-field input-textbox" placeholder="Type Your message." cols="30" rows="10"></textarea>
-            <div class="form-field form-checkbox">
-              <input class="" type="checkbox">Send a copy to my email.
-            </div>
-            <button class="btn btn-success btn-large">Send Email</button>
-          </form>
-        </div>
-      </div>
-
-      <div class="column">
-        <span class="form-title">Sign in Form</span>
-        <div class="form-container">
-          <form>
-            <div class="form-field">
-              <label class="icon-label user-icon" for="username3"></label>
-              <input class="input-field" id="username3" type="text" placeholder="Username">
-            </div>
-            <div class="form-field">
-              <label class="icon-label password-icon" for="password2"></label>
-              <input class="input-field" id="password2" type="password" placeholder="Password">
-            </div>
-            <div class="gap-wrap">
-              <div class="form-field form-checkbox">
-                <input class="" type="checkbox">Remember Me.
+          <div class="form-container">
+            <form>
+              <div class="form-field">
+                <label class="icon-label user-icon" for="registerUsername"></label>
+                <input class="input-field" type="text" name="registerUsername" id="registerUsername" placeholder="Username">
               </div>
-              <button class="btn btn-success btn-medium to-right">Sign in</button>
-            </div>
-          </form>
-        </div>
 
-        <span class="form-title">Recover Form</span>
-        <div class="form-container">
-          <form action="">
-            <div class="form-field">
-              <label class="icon-label email-icon" for=""></label>
-              <input class="input-field" type="email" placeholder="Enter your Email">
-            </div>
+              <div class="form-field">
+                <label class="icon-label password-icon" for="password"></label>
+                <input class="input-field" type="password" name="password" id="password" placeholder="Password">
+              </div>
 
-            <div class="form-field">
-              <label class="icon-label phone-icon" for=""></label>
-              <input class="input-field" type="tel" placeholder="Enter your telephone number">
-            </div>
+              <div class="form-field">
+                <label class="icon-label password-icon" for="conf-password"></label>
+                <input class="input-field" type="text" name="conf-password" id="conf-password" placeholder="Confirm Password">
+              </div>
 
-            <div class="gap-wrap">
-              <button class="btn btn-success btn-medium">Send</button>
-              <button class="btn btn-success btn-medium" disabled>Done</button>
-            </div>
-          </form>
-        </div>
+              <div class="form-field">
+                <label class="icon-label email-icon" for="registerEmail"></label>
+                <input class="input-field" type="email" name="email" id="registerEmail" placeholder="Email">
+              </div>
 
-        <span class="form-title">Subscribe Form</span>
-        <div class="form-container">
-          <form action="">
-            <div class="form-field">
-              <label class="icon-label email-icon" for=""></label>
-              <input class="input-field" type="email" placeholder="E-mail">
-            </div>
-            <div class="gap-wrap">
-              <button class="btn btn-success btn-medium">Subscribe</button>
-              <button class="btn btn-warning btn-medium">No, Thanks</button>
-            </div>
-          </form>
+              <div class="form-field">
+                <label class="icon-label location-icon" for="location"></label>
+                <select id="location" required class="input-field input-select">
+                  <option value="YouLocation" disabled selected hidden>Your Location</option>
+                  <option value="Krakow">Kraków</option>
+                  <option value="Warszawa">Warszawa</option>
+                  <option value="Gdansk">Gdańsk</option>
+                  <option value="Rzeszow">Rzeszów</option>
+                </select>
+              </div>
+
+              <div class="form-field form-checkbox">
+                <input class="" type="checkbox">I have read and accept the term of use.
+              </div>
+              <button class="btn btn-success btn-large">Sing up</button>
+            </form>
+          </div>
+
+          <span class="form-title">Send Email</span>
+          <div class="form-container">
+            <form>
+              <div class="form-field">
+                <label class="icon-label user-icon" for="sendUsername"></label>
+                <input class="input-field" id="sendUsername" type="text" placeholder="Username">
+              </div>
+
+              <div class="form-field">
+                <label class="icon-label email-icon" for="sendEmail"></label>
+                <input class="input-field" id="sendEmail" type="email" placeholder="Email">
+              </div>
+
+              <textarea class=" input-field input-textbox" placeholder="Type Your message."></textarea>
+              <div class="form-field form-checkbox">
+                <input class="" type="checkbox">Send a copy to my email.
+              </div>
+              <button class="btn btn-success btn-large">Send Email</button>
+            </form>
+          </div>
         </div>
       </div>
 
-    </section>
+      <div class="column">
+        <div class="forms-wrapper">
+          <span class="form-title">Sign in Form</span>
+          <div class="form-container">
+            <form>
+              <div class="form-field">
+                <label class="icon-label user-icon" for="singInUsername"></label>
+                <input class="input-field" id="singInUsername" type="text" placeholder="Username">
+              </div>
+              <div class="form-field">
+                <label class="icon-label password-icon" for="singInPassword"></label>
+                <input class="input-field" id="singInPassword" type="password" placeholder="Password">
+              </div>
+              <div class="gap-wrap">
+                <div class="form-field form-checkbox">
+                  <input class="" type="checkbox">Remember Me.
+                </div>
+                <button class="btn btn-success btn-medium to-right">Sign in</button>
+              </div>
+            </form>
+          </div>
+
+          <span class="form-title">Recover Form</span>
+          <div class="form-container">
+            <form>
+              <div class="form-field">
+                <label class="icon-label email-icon" for="recoveryEmail"></label>
+                <input id="recoveryEmail" class="input-field" type="email" placeholder="Enter your Email">
+              </div>
+
+              <div class="form-field">
+                <label class="icon-label phone-icon" for="telephone"></label>
+                <input id="telephone" class="input-field" type="tel" placeholder="Enter your telephone number">
+              </div>
+
+              <div class="gap-wrap">
+                <button class="btn btn-success btn-medium">Send</button>
+                <button class="btn btn-success btn-medium" disabled>Done</button>
+              </div>
+            </form>
+          </div>
+
+          <span class="form-title">Subscribe Form</span>
+          <div class="form-container">
+            <form>
+              <div class="form-field">
+                <label class="icon-label email-icon" for="subscribeEmail"></label>
+                <input id="subscribeEmail" class="input-field" type="email" placeholder="E-mail">
+              </div>
+              <div class="gap-wrap">
+                <button class="btn btn-success btn-medium">Subscribe</button>
+                <button class="btn btn-warning btn-medium">No,Thanks</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </main>
 
   </div>
 </body>
